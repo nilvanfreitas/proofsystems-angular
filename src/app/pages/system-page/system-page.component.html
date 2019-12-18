@@ -1,0 +1,246 @@
+<app-test-header  [startAnim]="startAnim"></app-test-header>
+
+<app-top-block [page_name]="'services'"  data-midnight="black" [topic]="'Capabilities'">
+</app-top-block>
+
+<div class="services-page" data-midnight="black">
+<main class="main">
+  <div class="container">
+    <div class="row entry">
+      <div class="col-lg-7 col-md-7 col-sm-12 order-md-1 order-lg-1 order-sm-2 order-2 col-12 ">
+        <h1 class="title h1">Digital Marketing</h1>
+        <p class="text">Our marketing specialists work with you to define and achieve your business objectives with cutting-edge strategies across multiple channels. We develop a digital marketing strategy with 4 main ingredients: the right message, to the right people, on the right platform and of course, at the right time.</p>
+        <button class="button">
+          <span [class.icon-add]="openId !== 1" [class.icon-multi]="openId === 1"
+          (click)="open(1)"> 
+            <span></span>
+            <span></span>
+          </span>{{openId !== 1 ? 'OPEN' : 'CLOSE'}}
+        </button>
+        <span class="counter">01</span>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12 order-md-2 order-lg-2 order-sm-1 order-1">
+        <img  src="../../../assets/entry-1.png" alt="">
+      </div>
+    </div>
+
+    <div class="hr" *ngIf="openId !== 1"></div>
+
+    <div class="about container " [class.about-close]="openId !== 1">
+
+        <div class="strategies">
+            <h2>Strategy</h2>
+            <ul>
+              <li>Brand Strategy</li>
+              <li>Positioning</li>
+              <li>Insight & Research Development</li>
+              <li>Product & Go-to-Market</li>
+            </ul>
+          </div>
+
+      <div class="capabilities">
+        <div class="row inner">
+          <div class="col-3 item">
+            <h2 class="item-title h2">Content Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Search Engine Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Social Media Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Email Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <h3 class="heading h3">Related Projects</h3>
+        <div class="row inner">
+          <div class="col-6">
+          <app-square-img-anim [bg]="'#5007fc'" 
+                              [title]="'Metacert Protocol'"
+                              [caption]="'Digital marketing, UI/UX'">
+             <img  class="img" src="../../../assets/centrality_1.png" alt="">
+          </app-square-img-anim>
+               
+          </div>
+          <div class="col-6">
+
+              <app-square-img-anim [bg]="'#1c1e23'"
+                                    [title]="'Blakeley'"
+                                    [caption]="'Branding'">
+                  <img  class="img" src="../../../assets/metacert_1.png" alt="">
+               </app-square-img-anim>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row entry">
+      <div class="col-lg-7 col-md-7 col-sm-12 order-md-1 order-lg-1 order-sm-2 order-2 col-12">
+        <h1 class="title h1">Graphic Design</h1>
+        <p class="text">At Proof Systems, we walk our clients through an immersive creative branding process. This includes workshops and brand positioning exercises to help them understand who they are. From establishing your visual identity to developing your overall brand strategy, we work to differentiate your brand and connect it to the people who matter the most.</p>
+        <button class="button">
+          <span [class.icon-add]="openId !== 2" [class.icon-multi]="openId === 2"
+          (click)="open(2)">
+            <span></span>
+            <span></span>
+          </span>{{openId !== 2 ? 'OPEN' : 'CLOSE'}}
+        </button>
+        <span class="counter">02</span>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12 order-md-2 order-lg-2 order-sm-1 order-1">
+        <img  src="../../../assets/entry-2.png" alt="">
+      </div>
+    </div>
+
+    <div class="hr" *ngIf="openId !== 2"></div>
+
+    <div class="about container " [class.about-close]="openId !== 2">
+
+        <div class="strategies">
+            <h2>Strategy</h2>
+            <ul>
+              <li>Brand Strategy</li>
+              <li>Positioning</li>
+              <li>Insight & Research Development</li>
+              <li>Product & Go-to-Market</li>
+            </ul>
+          </div>
+
+      <div class="capabilities">
+        <div class="row inner">
+          <div class="col-3 item">
+            <h2 class="item-title h2">Content Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Search Engine Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Social Media Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Email Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <h3 class="heading h3">Related Projects</h3>
+        <div class="row inner">
+          <div class="col-6">
+          <app-square-img-anim [bg]="'#5007fc'" 
+                              [title]="'Metacert Protocol'"
+                              [caption]="'Digital marketing, UI/UX'">
+             <img  class="img" src="../../../assets/centrality_1.png" alt="">
+          </app-square-img-anim>
+               
+          </div>
+          <div class="col-6">
+
+              <app-square-img-anim [bg]="'#1c1e23'"
+                                    [title]="'Blakeley'"
+                                    [caption]="'Branding'">
+                  <img  class="img" src="../../../assets/metacert_1.png" alt="">
+               </app-square-img-anim>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row entry">
+      <div class="col-lg-7 col-md-7 col-sm-12 order-md-1 order-lg-1 order-sm-2 order-2 col-12">
+        <h1 class="title h1">UX/UI Design</h1>
+        <p class="text">UX/UI design is more than just pretty images on a screen. At Proof Systems, we don’t believe in being just another web design company. We believe your website is the natural extension of your brand’s story that sets the tone for your online presence. Great web design pushes the boundaries between a static three column layout and gives users an immersive digital brand experience.</p>
+        <button class="button">
+          <span [class.icon-add]="openId !== 3" [class.icon-multi]="openId === 3"
+          (click)="open(3)">
+            <span></span>
+            <span></span>
+          </span>{{openId !== 3 ? 'OPEN' : 'CLOSE'}}
+        </button>
+        <span class="counter">03</span>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-12 col-12 order-md-2 order-lg-2  order-1 order-sm-1">
+        <img src="../../../assets/entry-3.png" alt="">
+      </div>
+    </div>
+    <div class="hr" *ngIf="openId !== 3"></div>
+
+    <div class="about container " [class.about-close]="openId !== 3">
+
+        <div class="strategies">
+            <h2>Strategy</h2>
+            <ul>
+              <li>Brand Strategy</li>
+              <li>Positioning</li>
+              <li>Insight & Research Development</li>
+              <li>Product & Go-to-Market</li>
+            </ul>
+          </div>
+
+    
+  
+      <div class="capabilities">
+        <div class="row inner">
+          <div class="col-3 item">
+            <h2 class="item-title h2">Content Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Search Engine Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Social Media Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+          <div class="col-3 item">
+            <h2 class="item-title h2">Email Marketing</h2>
+            <p class="item-text">With the right SEO, relevant content and a strong distribution strategy, your content can lead your inbound marketing and connect you to the people most interested in your brand.</p>
+          </div>
+        </div>
+      </div>
+      <div class="projects">
+        <h3 class="heading h3">Related Projects</h3>
+        <div class="row inner">
+          <div class="col-6">
+          <app-square-img-anim [bg]="'#5007fc'" 
+                              [title]="'Metacert Protocol'"
+                              [caption]="'Digital marketing, UI/UX'">
+             <img  class="img" src="../../../assets/centrality_1.png" alt="">
+          </app-square-img-anim>
+               
+          </div>
+          <div class="col-6">
+
+              <app-square-img-anim [bg]="'#1c1e23'"
+                                    [title]="'Blakeley'"
+                                    [caption]="'Branding'">
+                  <img  class="img" src="../../../assets/metacert_1.png" alt="">
+               </app-square-img-anim>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</main>
+</div>
+
+<div  data-midnight="black">
+  <app-intro [page_name]="'Contact'" ></app-intro>
+</div>
+
+<app-footer></app-footer>
+
+

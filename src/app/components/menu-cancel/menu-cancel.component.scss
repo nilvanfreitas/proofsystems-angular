@@ -1,0 +1,78 @@
+:host{
+    position: fixed;
+    right:37px;
+    top: 0;
+
+    .z-index{
+        z-index: 3333;
+    }
+    display: block;
+    z-index: 11111;
+
+
+    .just-wrapper{
+        position: relative;
+        height: 44px;
+        width: 145px;
+        top: 37px;
+        @media only screen and (max-width: 600px) {
+            // I comment it out to disable scrolling of header logo
+            // height: 80px !important ;
+            width: 500px !important;
+
+        }
+        & > div{
+        height: 44px;
+        width: 145px;
+        position: absolute;
+        bottom:0;
+        overflow: hidden;
+        left:50;
+    }
+     &.opened{
+         background: #fff !important;
+         transition: 0.85s;
+        & > div{
+            bottom: 0!important;
+
+
+            a{
+            color: black!important;
+            bottom: 0!important;
+            }
+        }
+
+    }
+    }
+
+    a{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #161419;
+        letter-spacing: 0;
+        text-align: center;
+        height: 44px;
+        height: 44px;
+        width: 145px;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 14px;
+        letter-spacing: 0.93px;
+        line-height: 19px;
+
+    &.white{
+        color: white;
+
+    }
+    &.black{
+           color: black!important;
+    }
+}
+
+}

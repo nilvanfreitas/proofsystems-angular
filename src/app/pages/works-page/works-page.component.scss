@@ -1,0 +1,183 @@
+:host{
+
+
+  @media (max-width:550px){
+      .container{
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  }
+
+  app-square-img-anim{
+    margin-bottom: 90px;
+    max-width: 685px;
+}   
+
+}
+
+.my-shuffle-container{
+   
+}
+
+
+        .categories-list{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+       // justify-content: space-between;
+
+        @media (max-width:550px){
+          margin-bottom: 31px;
+        }
+        
+        li{
+            height: 44px;	
+            width: 140px;
+            font-family: Mont;
+            font-size: 15px;	
+            font-weight: 600;
+             line-height: 20px;
+            text-align: center;
+            border: 1px solid #E4E4E4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 16px;
+            border-radius: 2px;
+            &.active,
+            &:hover{
+                background: black;
+                color:white;
+                
+                border-color: black;
+            }
+
+            @media (max-width:550px){
+             // margin-right: 0;
+              width: 132px;
+            }
+         }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width:400px){
+        span[rh-category-item]{
+      min-width: 75px;
+      height: 75px;
+      width: 75px;
+      }
+    
+      span[rh-category-item] img{
+      max-width: 75%;
+      }
+    
+      }
+      .techn-row{
+        display: flex;
+        flex-wrap: wrap;
+    
+        span[rh-category-item]{
+          margin-bottom: 20px;
+          margin-right: 17px;
+        }
+      }
+    
+      .column {
+        float: left;
+        width: 49.5%;
+        margin-top: 8px;
+        padding: 0;
+        max-width: 685px;
+        
+        // @media (max-width:770px) {
+        //   width:25%;  
+        //   }
+    
+          @media (max-width:480px) {
+            width:100%;  
+            }
+      }
+    
+
+
+    
+    
+      // height: 100px;
+      .col-span {
+        width: 50%;
+      }
+    
+      .my-sizer-element {
+        width: 8.33333%;
+      }
+    
+      /* default styles so shuffle doesn't have to set them (it will if they're missing) */
+      .my-shuffle {
+        position: relative;
+        overflow: hidden;
+      }
+    
+      /* Ensure images take up the same space when they load */
+      /* https://vestride.github.io/Shuffle/images */
+      .aspect {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        overflow: hidden;
+      }
+    
+      .aspect__inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    
+      .aspect--16x9 {
+        padding-bottom: 56.25%;
+      }
+    
+      .aspect--9x80 {
+        padding-bottom: calc(112.5% + 8px);
+      }
+    
+      .aspect--32x9 {
+        padding-bottom: calc(28.125% - 3px);
+      }
+    
+    
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+    
+    
+    
+      .my-shuffle-container{
+      //width: calc(100% - 30%);
+        margin: 0 auto;
+      }

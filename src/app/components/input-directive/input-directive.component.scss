@@ -1,0 +1,16 @@
+:host{
+    width:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px #D8D8D8 solid;	
+    font-family: Mont;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1614191f;
+    padding-bottom: 9px;
+    margin-bottom: 50px;
+    &::placeholder{
+        color: #1614191f;
+    }
+}

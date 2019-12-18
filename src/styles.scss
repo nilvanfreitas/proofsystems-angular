@@ -1,0 +1,124 @@
+
+
+
+
+    .container{
+        padding-left:45px!important;
+        padding-right:45px!important;
+
+
+        @media (max-width:450px){
+            padding-left: 22px!important;
+            padding-right: 22px!important;
+        }
+    }
+
+        @media (min-width: 576px){
+            body .container {
+                max-width: 630px;
+            }
+        }
+
+        
+
+    @media (min-width: 768px){
+        body .container {
+        max-width: 810px;
+        }
+        }
+    @media (min-width: 992px){
+    body .container {
+        max-width: 1150px;
+    }
+    }
+
+
+    @media (min-width: 1200px){
+        body .container {
+            max-width: 1230px;
+        }
+    } 
+   @media (min-width:1500px){
+  body  .container {
+       max-width: 1500px;
+      
+   }
+   }
+
+  
+
+
+
+
+
+*{
+    font-family: Mont;
+}
+
+.padding-0{
+    padding: 0!important;
+}
+
+.pc-h3{
+    font-size: 12px;
+    color: #161419;
+    letter-spacing: 3px;
+    line-height: 14px;
+    margin-bottom: 63px;
+    text-transform: uppercase;
+
+    font-size: 12px;
+     font-weight: bold;
+   letter-spacing: 3px;
+}
+
+.border-text{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #f0f3f7;
+    color: #161419;
+}
+
+.select2-container--default .select2-results > .select2-results__options{
+    max-height: 100%;
+}
+.select2-results__option {
+    padding: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.select2-search--dropdown{
+    display: none;
+}
+
+
+.contacts-page[_ngcontent-c1] form[_ngcontent-c1] select2 .select2 .select2-selection:focus{
+    outline: none;
+}
+
+.mobile__logo {
+    display: none;
+}
+@media (max-width:760px){ 
+    .site-scroll .just-wrapper.opened {
+        display: none;
+    }
+    .site-scroll .midnightHeader .logo {
+        display: none !important;
+    }
+    .mobile__logo {
+        position: relative;
+        top: -55px;
+        display: block;
+        svg {
+            width: 100px;
+            height: 38px;
+        }
+    }
+}

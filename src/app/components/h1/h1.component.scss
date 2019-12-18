@@ -1,0 +1,41 @@
+:host{
+   h1{
+        margin: 0;
+        font-size: 300px;
+        line-height: 300px;
+        color: rgba(255, 255, 255, 0);
+        text-transform: uppercase;
+        font-weight: 900;
+        position: relative;
+        margin-left: -161px;
+        margin-top: 73px;
+        text-align: left;
+        position: absolute;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: white;
+        opacity: .1;
+        top:50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin: 0;
+
+        @media (min-width: 992px) and (max-width:1500px){
+            font-size: 280px;
+           line-height: 300px;
+       }
+
+       @media (min-width: 610px) and (max-width:992px){
+        // font-size: 200px;
+        font-size: 20vw;
+        line-height: 200px;
+        -webkit-text-stroke-width: 1px;
+       }
+       @media (max-width: 610px) {
+        font-size: 20vw;
+        line-height: 200px;
+        -webkit-text-stroke-width: 1px;
+        }
+    }
+}
+

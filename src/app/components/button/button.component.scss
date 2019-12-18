@@ -1,0 +1,113 @@
+:host {
+  display: block;
+  margin: 0 auto;
+
+  &.black {
+    a:hover {
+      background: white;
+      padding-right: 30px;
+      color: black;
+    }
+
+    .arrow33 svg {
+      path {
+        stroke: white;
+      }
+      polyline {
+        stroke: white;
+      }
+    }
+
+    &:hover {
+      .arrow33 svg {
+        path {
+          // stroke: black;
+        }
+        polyline {
+          // fill:black;
+        }
+      }
+    }
+  }
+
+  &.white {
+    a {
+      background: black;
+      border: 1px solid black;
+    }
+
+    a:hover {
+      background: white;
+      border: 1px solid black;
+      padding-right: 30px;
+    }
+
+    .arrow33 svg {
+      path {
+        stroke: white;
+      }
+      polyline {
+        stroke: white;
+      }
+    }
+    &:hover {
+      .arrow33 svg {
+        path {
+          stroke: black;
+        }
+        polyline {
+          stroke: black;
+        }
+      }
+    }
+  }
+
+  a {
+    width: 170px;
+    height: 51px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    width: 170px;
+    height: 51px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 34px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    right: 0;
+    text-transform: uppercase;
+
+    .arrow33 {
+      margin: 0;
+      width: 30px;
+      height: 21px;
+      overflow: hidden;
+    }
+
+    &:hover {
+      background: white;
+      color: black;
+      width: 180px;
+    }
+
+    span {
+      margin-right: 18px;
+    }
+    // &:after{
+    //     content: ' \2192';
+    // }
+  }
+  @media (max-width: 610px) {
+    a {
+      span:nth-of-type(1) {
+        margin-left: unset !important;
+      }
+      width: 170px !important;
+    }
+  }
+}

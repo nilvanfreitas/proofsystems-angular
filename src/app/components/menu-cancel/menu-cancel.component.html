@@ -1,0 +1,11 @@
+
+<div class="just-wrapper" #element [class.opened]="hamburger">
+  <div  >
+      <a [class.black]="color === 'black' || hamburger" [class.white]="color === 'white'">
+        {{ hamburger ?  'CLOSE' : ''}}
+      </a>
+  </div>
+</div>
+
+
+

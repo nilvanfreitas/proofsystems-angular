@@ -1,0 +1,75 @@
+<app-test-header [startAnim]="triggerMenu"></app-test-header>
+<app-top-block [page_name]="'PROJECTS'" data-midnight="black" [topic]="'Work'">
+</app-top-block>
+
+<div class="container" data-midnight="black" style="overflow:hidden;">
+  <ul class="categories-list">
+    <li class="active" *ngFor="let cat of categoryList" [class.active]="activeCat === cat.id" (click)="filter(cat.id)">
+      {{cat.title}}</li>
+  </ul>
+
+
+  <section class="row my-shuffle-container">
+    <div class="col-1@sm picture-item column" data-groups='["3"]'>
+      <app-square-img-anim [bg]="'#1c1e23'" [title]="'Metacert Protocol'" [caption]="'Branding'">
+        <img class="img" src="../../../assets/metacert_1.png" alt="">
+      </app-square-img-anim>
+
+
+    </div>
+    <div class="col-1@sm picture-item column" data-groups='["2"]'>
+
+      <app-square-img-anim class="picture-item" [bg]="'#f7a941'" [title]="'Blakeley'" [caption]="'Design'"
+        routerLink="/case-study/blakelye">
+
+        <img class="img" src="../../../assets/blackeley_1.png" alt="">
+      </app-square-img-anim>
+    </div>
+
+    <div class="col-1@sm picture-item column" data-groups='["4"]'>
+      <app-square-img-anim [bg]="'#edf1f7'" [title]="'GlobalChain Group'" [caption]="'Advertising'"
+        routerLink="/case-study/group">
+        <img class="img" src="../../../assets/gcg_1.png" alt="">
+      </app-square-img-anim>
+    </div>
+    <div class="col-1@sm picture-item column" data-groups='["3"]'>
+
+      <app-square-img-anim [bg]="'#c12049'" [title]="'Token Generator'" [caption]="'Branding'"
+        routerLink="/case-study/token-generator">
+        <img class="img" src="../../../assets/token-generator_1.png" alt="">
+      </app-square-img-anim>
+    </div>
+
+
+    <div class="col-1@sm picture-item column" data-groups='["2"]'>
+
+      <app-square-img-anim [bg]="'#edf1f7'" [title]="'Pryze'" [caption]="'Design'">
+
+        <img class="img" src="../../../assets/prize_1.png" alt="">
+      </app-square-img-anim>
+    </div>
+
+
+    <div class=" col-1@sm picture-item column" data-groups='["4"]'>
+      <app-square-img-anim [bg]="'#5007fc'" [title]="'Centrality'" [caption]="'Advertising'"
+        data-groups="['advertising']">
+        <img class="img" src="../../../assets/centrality_1.png" alt="">
+      </app-square-img-anim>
+
+    </div>
+
+    <div class="col-1@sm picture-item column" data-groups='["3"]'>
+
+      <app-square-img-anim [bg]="'#3C8DFF'" [title]="'Onix Capital'" [caption]="'Branding, web-design'"
+        routerLink="/case-study/onix-capital">
+        <img class="img" src="../../../assets/onix_capital_1.png" alt="">
+      </app-square-img-anim>
+    </div>
+
+
+
+    <div class="col-1@sm my-sizer-element"></div>
+  </section>
+</div>
+<app-intro [page_name]="'CONTACT'" data-midnight="black"></app-intro>
+<app-footer></app-footer>

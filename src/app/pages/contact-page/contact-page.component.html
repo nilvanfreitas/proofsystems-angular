@@ -1,0 +1,94 @@
+<app-test-header  [startAnim]="startAnim"></app-test-header>
+<app-top-block   data-midnight="black"  style="background-image: url(../../../assets/contact-bg.png)"
+               [page_name]="'CONTACT'" 
+               [topic]="'Let’s simplify your brand into bite sized chunks and distribute it to the world'">
+</app-top-block>
+
+<div class="container" data-midnight="black">
+<div class="contacts-page">
+
+  <div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+     <form [formGroup]="angForm" >
+       <div class="form-div-bottom">
+         <label>I’d like to talk about…</label>
+        <select2  [data]="exampleData" #select (valueChanged)="selectChange($event)"></select2>
+       </div> 
+       <div>
+         <input type="text" formControlName="name" app-input-directive placeholder="Your name*">
+       </div>
+       <div>
+          <input type="text" formControlName="email" app-input-directive placeholder="Email address*">
+        </div>
+        <div>
+            <input type="text" formControlName="tell_us" app-input-directive placeholder="Tell us about the project*">
+          </div>
+          <div class="attach-file-input" (click)="file.click()">
+              <input type="file" #file><div>
+                <span>
+            <svg width="9px" height="19px" viewBox="0 0 9 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Contacts" transform="translate(-540.000000, -1002.000000)" fill="#161419">
+                      <g id="Contact-Us" transform="translate(258.000000, 628.000000)">
+                          <path d="M294.102695,388.983257 C294.102695,390.550223 292.907381,391.745537 291.340415,391.745537 C290.456486,391.745537 289.60269,391.36384 288.979921,390.741072 L281.175225,382.94642 C280.462054,382.223204 280.040179,381.238828 280.040179,380.224318 C280.040179,378.094851 281.717636,376.397305 283.847103,376.397305 C284.871658,376.397305 285.856034,376.809135 286.589294,377.532351 L292.66631,383.619411 C292.726578,383.679679 292.766756,383.760037 292.766756,383.840394 C292.766756,384.051332 292.204256,384.613832 291.993318,384.613832 C291.902916,384.613832 291.822559,384.573654 291.762291,384.513386 L285.67523,378.41628 C285.193087,377.944181 284.540184,377.642842 283.857147,377.642842 C282.430806,377.642842 281.325894,378.797977 281.325894,380.214273 C281.325894,380.89731 281.607145,381.550213 282.089288,382.032356 L289.88394,389.837053 C290.265637,390.21875 290.798004,390.469866 291.340415,390.469866 C292.194211,390.469866 292.827024,389.837053 292.827024,388.983257 C292.827024,388.430801 292.575908,387.908479 292.194211,387.526782 L286.358267,381.690838 C286.197552,381.540168 285.97657,381.449766 285.755587,381.449766 C285.37389,381.449766 285.082595,381.731016 285.082595,382.122758 C285.082595,382.34374 285.183042,382.554678 285.333712,382.715393 L289.45202,386.833701 C289.512288,386.893969 289.552467,386.974326 289.552467,387.054683 C289.552467,387.265621 288.979921,387.838166 288.768984,387.838166 C288.688626,387.838166 288.608269,387.797988 288.548001,387.73772 L284.429693,383.619411 C284.027907,383.22767 283.79688,382.675214 283.79688,382.122758 C283.79688,381.017846 284.66072,380.154006 285.765632,380.154006 C286.328133,380.154006 286.870544,380.385033 287.262285,380.786819 L293.09823,386.622763 C293.731043,387.245532 294.102695,388.099327 294.102695,388.983257 Z" id="" transform="translate(287.071437, 384.071421) rotate(-135.000000) translate(-287.071437, -384.071421) "></path>
+                      </g>
+                  </g>
+              </g>
+            </svg>
+                </span>
+          <span>Attach Files</span>
+              </div>
+          </div>
+          <div class="check-box">
+            <span>
+              <input type="checkbox" formControlName="checkbox" >
+            </span>
+            <label>
+                I agree to receive occasional Proof Systems newsletters containing news and advice on creating personal and business progress via digital tech.
+            </label>
+          </div>
+          <button type="button" class="send">Send</button>
+          <button type="button" class="clear" (click)="reset()">Clear form</button>
+     </form>
+  </div>
+
+  <div class="col-6">
+  <div class="social-part">
+<h3>Contacts</h3>
+<p>m: hello@proofsystems.io</p>
+<p>t: +1 919 504 4446</p>
+
+<h3>Follow</h3>
+<section class="social-icons">  
+    <a>
+        <i class="fab fa-instagram"></i>
+     </a>
+     <a>
+           <i class="fab fa-facebook-f"></i>
+     </a>
+     <a ><i class="fab fa-dribbble"></i></a>
+    
+   <a>
+       <i class="fab fa-behance"></i>
+   </a>
+   <a>
+      <i class="fab fa-google-plus-g"></i>
+  </a>
+  
+   <a>
+       <i class="fab fa-twitter"></i>
+   </a>
+   
+   <a>
+    <i class="fab fa-linkedin-in"></i> 
+   </a>
+   
+    <a>
+         <i class="fab fa-medium-m"></i>
+     </a>
+</section>
+  </div>
+    </div>
+  </div>
+</div>
+</div>

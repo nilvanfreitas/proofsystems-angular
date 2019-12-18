@@ -1,0 +1,59 @@
+:host{
+    position: fixed;
+    right:174px;
+    top: 0;
+
+    .z-index{
+        z-index: 3333;
+    }
+   
+    display: block;
+    z-index: 11111;
+
+    
+    .just-wrapper{
+        position: relative;
+        height: 44px; 
+        width: 145px;  
+          top: 37px;
+        & > div{
+        height: 44px; 
+        width: 145px;
+        position: absolute;
+        bottom:0;
+        overflow: hidden;
+        left:50;
+    }
+    
+    }
+  
+    a{
+        position: absolute;
+        bottom:0;
+        left: 0;
+    background: #FFFFFF;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #161419;
+    letter-spacing: 0;
+    text-align: center;
+    height: 44px;
+    height: 44px; 
+    width: 145px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.black{ 
+        background: white;
+   
+    }
+    &.black{
+            background: black;
+        color:white;
+    }
+}
+
+}

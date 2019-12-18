@@ -1,0 +1,26 @@
+@media (max-width:640px){
+    .actual-modal {
+         width: 90%;
+      max-height: 90%;
+     }
+     .actual-modal .member-modal-img {
+        height: auto;
+     }
+     .actual-modal .member-modal-img img{
+         width: 100%;
+     }
+    .actual-modal .member-modal-content {
+      padding: 13px 14px 0;
+      p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+      }
+      h3{
+        margin-bottom: 13px;
+      }
+    }
+}
+
+

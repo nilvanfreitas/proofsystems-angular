@@ -1,0 +1,13 @@
+
+<div class="just-wrapper" #element>
+  <div>
+    <a [class.white]="color === 'white'" [class.black]="color === 'black' || hamburger" (click)="burger()">
+      <div id="nav-icon3" [class.open]="hamburger">
+        <span [style.background]="headerColor" ></span>
+        <span [style.background]="headerColor"></span>
+        <span [style.background]="headerColor"></span>
+        <span [style.background]="headerColor"></span>
+      </div>
+    </a>
+  </div>
+</div>

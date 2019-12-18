@@ -1,0 +1,62 @@
+<app-test-header  [startAnim]="startAnim"></app-test-header>
+<app-top-block  data-midnight="black" style="background-image: url(../../../assets/agency-bg.png)"
+        [page_name]="'ABOUT US'" [topic]="'Agency'">
+
+  </app-top-block>
+  <app-member-modal *ngIf="selectedMember" 
+                   [member]="selectedMember"
+                    (close)="closeModal()"></app-member-modal>
+
+
+
+
+<div class="agency-page" data-midnight="default">
+  <div class="container">
+      <section class="margin-minus row">
+          <div class="col-4">
+           <span>10+</span>
+           <span>employees</span>
+          </div>
+          <div class="col-4">
+              <span>100+</span>
+              <span>projects</span>
+           </div>
+           <div class="col-4">
+              <span>4+</span>
+           <span>years of experience</span>
+           </div>
+      </section>
+ <h3 class="pc-h3">The secret sauce</h3>
+      <div class="row secret-sauce">
+        <div class="col-sm-12 col-md-8 col-lg-8">
+              <p>Built by a passionate team with decades of results, we’ve condensed digital marketing into a system that is optimized for acquisition & conversions. After careful planning (and testing), we help by find (or craft) your unique value proposition and then efficiently distribute it across relevant mediums.
+                </p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <p>«Simplicity in messaging and efficiency in conversion is our craft. Customers and users are our product.» </p>
+             <h4>Tyler Ward – Founder & CEO</h4>
+          </div>
+      </div>
+  </div>
+</div>
+  <div class="meet-our-team" data-midnight="black">
+    <div class="container">
+       <h2>Meet Our Team</h2>
+       <div class="row">
+         <div class="col-12 col-sm-6 col-md-6 col-lg-4" *ngFor="let member of teamMemberList;let i = index">
+          <div class="team-member">
+                  <div class="team-member-img">
+                    <img [class.max-height-img]="i === 5" [src]="member.img">
+                    <div class="team-member-img-anim" (click)="showModal(member)">
+                        <span>Read bio &rarr;</span>
+                    </div>
+                  </div>
+                  <h4 class="fullname">{{member.fullName}}</h4>
+                  <h5>{{member.status}}</h5>
+                </div>
+         </div>
+    </div>
+  </div>
+</div>
+  <app-intro [page_name]="'CONTACT'" data-midnight="black"></app-intro>
+<app-footer></app-footer>

@@ -1,0 +1,108 @@
+:host{
+    display: block;
+    margin: 0 auto;
+
+    &.black{      
+       
+
+        a:hover{
+            background: white;
+            padding-right: 30px;
+            color: black;
+        }
+
+
+        .arrow33 svg{
+        path{
+            stroke: white; 
+        }
+        polyline{
+            fill:white;
+        }
+    }
+
+
+        &:hover{
+        .arrow33 svg{    
+            path{
+                stroke: black;   
+            }
+            polyline{
+                fill:black;
+            }
+        }
+    }
+    }
+
+    &.white{   
+        a{
+              background: black; 
+        }
+       
+        
+              a:hover{
+            background: transparent;
+           border:1px solid black;
+            padding-right: 30px;
+        }
+
+    
+        .arrow33 svg{
+        path{
+            stroke: white; 
+        }
+        polyline{
+            fill:white;
+        }
+    }
+        &:hover{
+        .arrow33 svg{    
+            path{
+                stroke: black;   
+            }
+            polyline{
+                fill:black;
+            }
+        }
+    }
+    }
+
+
+    a{
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        height: 51px;
+        max-height: 51px;
+        box-sizing: border-box;
+        cursor: pointer;
+        display: flex;
+        align-items:center;
+        padding-left: 34px;
+        transition: all .2s ease-in-out;
+        position: relative;
+        right: 0;
+        text-transform: uppercase;
+        padding-right: 15px;
+        width: max-content;
+      
+        .arrow33{
+            margin: 0;
+            width: 30px;
+            height: 21px;
+            overflow: hidden;          
+        }
+
+
+    
+
+
+        span{
+            margin-right: 18px;
+        }
+      
+    }
+}

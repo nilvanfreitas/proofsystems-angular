@@ -1,0 +1,661 @@
+<section data-midnight="default" style="overflow: hidden;">
+  <app-top-anim></app-top-anim>
+</section>
+
+<section>
+  <div class="learn-more" data-midnight="black">
+    <div class="container">
+      <div class="col-12 padding-0">
+        <p>
+          As a full service <span class="border-text">digital</span> marketing agency our
+          capabilities range from branding, design, & UI/UX to advertising and marketing. We work
+          with clients to <span class="border-text">simplify</span> their brand story and messaging
+          so they are delicious and <span class="border-text">digestible</span> for customers and
+          users.
+        </p>
+        <pc-button-arrow class="white mt-5">Learn More</pc-button-arrow>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="explore-mobile">
+  <div class="container">
+    <h4>Featured projects</h4>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <app-square-img-anim [bg]="'#1c1e23'" [title]="'Metacert Protocol'" [caption]="'Branding'">
+          <img class="img" src="../../../assets/metacert_1.png" alt="" />
+        </app-square-img-anim>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <app-square-img-anim
+          class="picture-item"
+          [bg]="'#f7a941'"
+          [title]="'Blakeley'"
+          [caption]="'Design'"
+        >
+          <img class="img" src="../../../assets/blackeley_1.png" alt="" />
+        </app-square-img-anim>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <app-square-img-anim
+          [bg]="'#edf1f7'"
+          [title]="'GlobalChain Group'"
+          [caption]="'Advertising'"
+        >
+          <img class="img" src="../../../assets/gcg_1.png" alt="" />
+        </app-square-img-anim>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <app-square-img-anim [bg]="'#c12049'" [title]="'Token Generator'" [caption]="'Branding'">
+          <img class="img" src="../../../assets/token-generator_1.png" alt="" />
+        </app-square-img-anim>
+      </div>
+    </div>
+    <pc-button-arrow class="white">VIEW ALL</pc-button-arrow>
+  </div>
+</section>
+<div>
+  <div class="explore-block explore-desktop scroll-block ">
+    <div [ngStyle]="{ 'padding-left': leftSpace + 'px' }">
+      <h4>SELECTED PROJECTS</h4>
+      <ul>
+        <li #anim_li>EXPLORE</li>
+        <li #li (mouseenter)="hoverLi(1)" [class.active]="hoverIndex === 1">
+          Metacert <span class="branding-web-design">Branding, web design</span>
+        </li>
+        <li #li (mouseenter)="hoverLi(2)" [class.active]="hoverIndex === 2">
+          GlobalChain <span class="branding-web-design">Branding, web design</span>
+        </li>
+        <li #li (mouseenter)="hoverLi(3)" [class.active]="hoverIndex === 3">
+          Blakeley <span class="branding-web-design">Branding, web design</span>
+        </li>
+        <li #li (mouseenter)="hoverLi(4)" [class.active]="hoverIndex === 4">
+          Token Generator <span class="branding-web-design">Branding, web design</span>
+        </li>
+      </ul>
+      <pc-button-arrow class="black">VIEW ALL</pc-button-arrow>
+    </div>
+    <div
+      [class.metacert-color]="hoverIndex === 1"
+      [class.global-chain-color]="hoverIndex === 2"
+      [class.blakeley-color]="hoverIndex === 3"
+      [class.token-generator-color]="hoverIndex === 4"
+    >
+      <img [class.transparent]="hoverIndex !== 1" src="../../../assets/Metacert.jpg" />
+      <img [class.transparent]="hoverIndex !== 2" src="../../../assets/GlobalChain.jpg" />
+      <img [class.transparent]="hoverIndex !== 3" src="../../../assets/Blakeley.jpg" />
+      <img [class.transparent]="hoverIndex !== 4" src="../../../assets/Token_Generator.jpg" />
+    </div>
+  </div>
+  <div>
+    <div class="capabilities" data-midnight="black">
+      <div class="container" #container>
+        <h3 class="pc-h3">CAPABILITIES</h3>
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-4 col-sm-6 capa-item"
+            id="dm"
+            [class.mobile-hover]="mobileHover == 'dm'"
+          >
+            <div>
+              <section>
+                <svg
+                  width="65px"
+                  height="71px"
+                  viewBox="0 0 65 71"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Home" transform="translate(-309.000000, -3167.000000)">
+                      <g id="Services-Copy-2" transform="translate(251.000000, 3016.000000)">
+                        <g id="Group-5" transform="translate(66.000000, 151.000000)">
+                          <path
+                            d="M48.317,23.8703 C48.317,37.0533 37.629,47.7403 24.447,47.7403 C11.263,47.7403 0.577,37.0533 0.577,23.8703 C0.577,10.6873 11.263,0.0003 24.447,0.0003 C37.629,0.0003 48.317,10.6873 48.317,23.8703"
+                            id="Fill-1"
+                            fill="#05A7BF"
+                          ></path>
+                          <polygon
+                            id="Stroke-3"
+                            stroke="#000000"
+                            stroke-width="10"
+                            points="24.4468 23.8703 0.6608 65.0693 48.2328 65.0693"
+                          ></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <!-- <img src="../assets/capa1.png"> -->
+              </section>
+              <h4>Digital Marketing</h4>
+              <ul>
+                <li>Content Marketing</li>
+                <li>Search Engine Marketing</li>
+                <li>Social Media Marketing</li>
+                <li>Email Marketing</li>
+              </ul>
+            </div>
+
+            <pc-button class="black" [number]="0">EXPLORE</pc-button>
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-sm-6 capa-item"
+            id="gd"
+            [class.mobile-hover]="mobileHover == 'gd'"
+          >
+            <div>
+              <section>
+                <!-- <img src="../assets/capa2.png"> -->
+
+                <svg
+                  width="75px"
+                  height="72px"
+                  viewBox="0 0 75 72"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <polygon
+                      id="path-1"
+                      points="0.802 0.417 36.594 0.417 36.594 36.2083 0.802 36.2083"
+                    ></polygon>
+                    <polygon
+                      id="path-3"
+                      points="0.802 0.2083 36.594 0.2083 36.594 36 0.802 36"
+                    ></polygon>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Home" transform="translate(-784.000000, -3169.000000)">
+                      <g id="Services-Copy-2" transform="translate(251.000000, 3016.000000)">
+                        <g id="Group-11" transform="translate(538.000000, 152.000000)">
+                          <path
+                            d="M50.594,36.7917 C50.594,46.6757 42.581,54.6877 32.698,54.6877 C22.815,54.6877 14.802,46.6757 14.802,36.7917 C14.802,26.9077 22.815,18.8957 32.698,18.8957 C42.581,18.8957 50.594,26.9077 50.594,36.7917"
+                            id="Fill-1"
+                            fill="#D13987"
+                          ></path>
+                          <g id="Group-5" transform="translate(14.000000, 0.583400)">
+                            <mask id="mask-2" fill="white">
+                              <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                            <path
+                              d="M36.594,18.3123 C36.594,28.1963 28.581,36.2083 18.698,36.2083 C8.815,36.2083 0.802,28.1963 0.802,18.3123 C0.802,8.4293 8.815,0.4163 18.698,0.4163 C28.581,0.4163 36.594,8.4293 36.594,18.3123"
+                              id="Fill-3"
+                              fill="#D13987"
+                              mask="url(#mask-2)"
+                            ></path>
+                          </g>
+                          <g id="Group-8" transform="translate(14.000000, 36.583400)">
+                            <mask id="mask-4" fill="white">
+                              <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-7"></g>
+                            <path
+                              d="M36.594,18.1043 C36.594,27.9873 28.581,36.0003 18.698,36.0003 C8.815,36.0003 0.802,27.9873 0.802,18.1043 C0.802,8.2203 8.815,0.2083 18.698,0.2083 C28.581,0.2083 36.594,8.2203 36.594,18.1043"
+                              id="Fill-6"
+                              fill="#D13987"
+                              mask="url(#mask-4)"
+                            ></path>
+                          </g>
+                          <path
+                            d="M32.2141,18.5641 C18.7561,18.5641 7.0211,25.9031 0.7661,36.7921 C7.0211,47.6801 18.7561,55.0191 32.2141,55.0191 C45.6721,55.0191 57.4071,47.6801 63.6621,36.7921 C57.4071,25.9031 45.6721,18.5641 32.2141,18.5641 Z"
+                            id="Stroke-9"
+                            stroke="#000000"
+                            stroke-width="10"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </section>
+              <h4>Graphic Design</h4>
+              <ul>
+                <li>Naming</li>
+                <li>Logo design</li>
+                <li>Brand identity system</li>
+                <li>Marketing graphics</li>
+              </ul>
+            </div>
+            <pc-button [number]="1">EXPLORE</pc-button>
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-sm-6 capa-item"
+            id="ui"
+            [class.mobile-hover]="mobileHover == 'ui'"
+          >
+            <div>
+              <section>
+                <!-- <img src="../assets/capa3.png"> -->
+
+                <svg
+                  width="69px"
+                  height="69px"
+                  viewBox="0 0 69 69"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Home" transform="translate(-1265.000000, -3173.000000)">
+                      <g id="Services-Copy-2" transform="translate(251.000000, 3016.000000)">
+                        <g id="Group-5" transform="translate(1014.000000, 157.000000)">
+                          <polygon
+                            id="Fill-1"
+                            fill="#692AFF"
+                            points="0 68.2818 34.141 68.2818 34.141 34.1408 0 34.1408"
+                          ></polygon>
+                          <polygon
+                            id="Fill-2"
+                            fill="#692AFF"
+                            points="34.141 34.1408 68.282 34.1408 68.282 -0.0002 34.141 -0.0002"
+                          ></polygon>
+                          <polygon
+                            id="Stroke-3"
+                            stroke="#000000"
+                            stroke-width="10"
+                            points="17.07 51.2108 51.211 51.2108 51.211 17.0698 17.07 17.0698"
+                          ></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </section>
+              <h4>UI/UX</h4>
+              <ul>
+                <li>Mobile Responsive Design</li>
+                <li>Creative Direction</li>
+                <li>Social Media Marketing</li>
+                <li>UI/UX Design</li>
+                <li>Mobile/ Responsive Design</li>
+              </ul>
+            </div>
+            <pc-button [number]="2">EXPLORE</pc-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="featured-client ">
+    <div class="container">
+      <h3 class="pc-h3">Featured clients</h3>
+      <h5>Here are some clients who are enjoying our results.</h5>
+      <div class="row" [class.max-height-100]="learn_more">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://consensys.net/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client1.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a>
+            <section class="featured-client-item">
+              <img src="../assets/client2.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://www.foam.space/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client3.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="http://www.plugblockchain.com/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client4.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a>
+            <section class="featured-client-item">
+              <img src="../assets/client5.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client6.png" />
+          </section>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://ara.one/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client7.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://www.aikon.com/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client8.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://ardatoken.com/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client9.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://elementgroup.com/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client10.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://www.flyingcarpet.network/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client11.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://leverj.io/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client12.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client13.png" />
+          </section>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://gridplus.io/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client14.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://imbrex.io/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client15.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://blockhaus.io/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client16.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://marketprotocol.io/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client17.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://metacert.com/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client18.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client19.png" />
+          </section>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <a href="https://www.orbismesh.com/" target="_blank">
+            <section class="featured-client-item">
+              <img src="../assets/client20.png" />
+            </section>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client21.png" />
+          </section>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client22.png" />
+          </section>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client23.png" />
+          </section>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+          <section class="featured-client-item">
+            <img src="../assets/client24.png" />
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <a class="load-more" (click)="learnMore()">LOAD MORE</a>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="people-say" data-midnight="black">
+    <div class="container">
+      <div class="people-say-inner">
+        <h3 class="pc-h3">What people say</h3>
+
+        <section class="swiper-block">
+          <swiper [config]="config" #swiper>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <p>
+                    Everyone at Proof Systems is <span class="border-text">professional</span>,
+                    helpful, friendly, and flexible. They are also unbelievably
+                    <span class="border-text">talented </span>creatives.
+                  </p>
+                  <div class="user-info">
+                    <span class="user-avatar">
+                      <img src="../assets/avatar.png" /> </span
+                    ><span class="user-name"
+                      ><strong> Brouard </strong><span>–</span> Centrality</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <p>
+                    Everyone at Proof Systems is <span class="border-text">professional</span>,
+                    helpful, friendly, and flexible. They are also unbelievably
+                    <span class="border-text">talented </span>creatives.
+                  </p>
+                  <div class="user-info">
+                    <span class="user-avatar">
+                      <img src="../assets/avatar.png" /> </span
+                    ><span class="user-name"
+                      ><strong> Brouard </strong><span>–</span> Centrality</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div>
+                  <p>
+                    Everyone at Proof Systems is <span class="border-text">professional</span>,
+                    helpful, friendly, and flexible. They are also unbelievably
+                    <span class="border-text">talented </span>creatives.
+                  </p>
+                  <div class="user-info">
+                    <span class="user-avatar">
+                      <img src="../assets/avatar.png" /> </span
+                    ><span class="user-name"
+                      ><strong> Brouard </strong><span>–</span> Centrality</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div>
+                  <p>
+                    Everyone at Proof Systems is <span class="border-text">professional</span>,
+                    helpful, friendly, and flexible. They are also unbelievably
+                    <span class="border-text">talented </span>creatives.
+                  </p>
+                  <div class="user-info">
+                    <span class="user-avatar">
+                      <img src="../assets/avatar.png" /> </span
+                    ><span class="user-name"
+                      ><strong> Brouard </strong><span>–</span> Centrality</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </swiper>
+          <div class="custom-swiper-nav">
+            <a (click)="prev()" class="next">
+              <svg
+                _ngcontent-c8=""
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="arrow-svg animated-arrow"
+                height="8px"
+                version="1.1"
+                viewBox="0 0 19 8"
+                width="19px"
+                xmlns="http://www.w3.org/2000/svg"
+                style=""
+              >
+                <g
+                  _ngcontent-c8=""
+                  fill="none"
+                  fill-rule="evenodd"
+                  id="Page-1"
+                  stroke="none"
+                  stroke-linecap="round"
+                  stroke-width="1"
+                >
+                  <g
+                    _ngcontent-c8=""
+                    id="Home"
+                    stroke="#FFFFFF"
+                    transform="translate(-397.000000, -1613.000000)"
+                  >
+                    <g
+                      _ngcontent-c8=""
+                      id="About-Us"
+                      transform="translate(255.000000, 1234.000000)"
+                    >
+                      <g _ngcontent-c8="" id="Group-3" transform="translate(0.000000, 357.000000)">
+                        <path _ngcontent-c8="" d="M143.046387,26 L160.5,26" id="Line-3"></path>
+                        <polyline
+                          _ngcontent-c8=""
+                          id="Path-2"
+                          points="155.17708 23.7226496 154.94051 28.2773504 159.514323 28.0598935"
+                          transform="translate(157.227417, 26.000000) rotate(-135.000000) translate(-157.227417, -26.000000) "
+                        ></polyline>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a (click)="next()" class="prev">
+              <svg
+                _ngcontent-c8=""
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="arrow-svg animated-arrow"
+                height="8px"
+                version="1.1"
+                viewBox="0 0 19 8"
+                width="19px"
+                xmlns="http://www.w3.org/2000/svg"
+                style=""
+              >
+                <g
+                  _ngcontent-c8=""
+                  fill="none"
+                  fill-rule="evenodd"
+                  id="Page-1"
+                  stroke="none"
+                  stroke-linecap="round"
+                  stroke-width="1"
+                >
+                  <g
+                    _ngcontent-c8=""
+                    id="Home"
+                    stroke="#FFFFFF"
+                    transform="translate(-397.000000, -1613.000000)"
+                  >
+                    <g
+                      _ngcontent-c8=""
+                      id="About-Us"
+                      transform="translate(255.000000, 1234.000000)"
+                    >
+                      <g _ngcontent-c8="" id="Group-3" transform="translate(0.000000, 357.000000)">
+                        <path _ngcontent-c8="" d="M143.046387,26 L160.5,26" id="Line-3"></path>
+                        <polyline
+                          _ngcontent-c8=""
+                          id="Path-2"
+                          points="155.17708 23.7226496 154.94051 28.2773504 159.514323 28.0598935"
+                          transform="translate(157.227417, 26.000000) rotate(-135.000000) translate(-157.227417, -26.000000) "
+                        ></polyline>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section data-midnight="black">
+  <app-intro [page_name]="'CONTACT'"></app-intro>
+</section>
+<app-footer></app-footer>

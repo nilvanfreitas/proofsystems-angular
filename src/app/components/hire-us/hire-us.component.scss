@@ -1,0 +1,160 @@
+:host{
+    cursor: pointer;
+   
+
+    &:focus{
+        outline: none;
+    }
+
+    .z-index{
+        z-index: 5;
+    }
+   
+    display: block;    
+    .just-wrapper{
+        position: relative;
+        height: 44px; 
+        width: 145px;  
+          top: 37px; 
+
+
+          &.animate-out{
+            a:after{
+            transform: scaleX(1);
+            transform-origin: 0 50%;
+            transition-timing-function: ease!important;
+        }
+        .white{
+            span{
+                position: relative;
+                z-index: 2;
+               color:#000000!important;
+           }
+        &:after{
+            background-color: white;
+        }
+       }
+        .black{
+
+            span{
+                position: relative;
+                z-index: 2;
+                  color:#ffffff;
+            }
+           
+
+            &:after{
+                background-color:black;
+          }
+        }
+    }
+
+        
+          &.hover{
+            a:after{
+            transform: scaleX(1);
+            transform-origin: 0 50%;
+            transition-timing-function: ease!important;
+        }
+        .white{
+            border:1px solid white;
+            span{
+                position: relative;
+                z-index: 2;
+               color:#ffffff!important;
+           }
+        &:after{
+            background-color: black;
+        }
+       }
+        .black{
+            border:1px solid black;
+            span{
+                position: relative;
+                z-index: 2;
+                  color:#000000!important;
+            }
+        
+
+            &:after{
+                background-color:white;
+          }
+        }
+    }
+        & > div{
+        height: 44px; 
+        width: 145px;
+        position: absolute;
+        bottom:0;
+        overflow: hidden;
+        left:50;
+
+      
+    
+  
+    }
+    
+    }
+  
+    a{
+        position: relative;
+        bottom:0;
+        left: 0;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #161419;
+    letter-spacing: 0;
+    text-align: center;
+    height: 44px;
+    height: 44px; 
+    width: 145px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    will-change: background-color;
+  
+
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        will-change: transform,background-color;
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
+        transition: color,transform .3s;
+        transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+      }
+    &.white{ 
+         background-color: white;
+         color: #000000;
+         border:1px solid white;
+        &:after{
+            background-color: black;
+        }
+    }
+
+    &.black{
+        background-color: #000000;
+        color:#ffffff;
+        border:1px solid black;
+        &:after{
+            background-color: white;
+        }
+
+    }
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .hire-us-class{
+        display:none;
+    }
+    
+} 

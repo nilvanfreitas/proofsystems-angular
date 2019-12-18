@@ -1,0 +1,92 @@
+:host{
+
+
+    .next-projects{
+        padding: 138px 0;
+
+        h3{
+            color: #161419;
+                font-family: Mont;
+                font-size: 12px;
+                font-weight: bold;	
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                line-height: 14px;
+                margin-bottom: 100px;
+        }
+        app-square-img-anim{
+            max-width: 685px!important;
+        }
+           
+    }
+    .blakelye-h4{
+        color: #1C2229;
+       font-family: Mont;
+            font-size: 30px;	
+                font-weight: 600;	
+                line-height: 43px;
+    }
+
+    .blakelye-logo{
+        & > .container{
+            padding-top: 129px;
+        }
+
+
+
+        
+
+        &.website{
+            background: #1C2229;
+
+            p,.blakelye-h4{
+               color:white;
+            }
+        }
+        p{
+            max-width: 679px;
+            margin-bottom: 100px;
+
+        }
+            .row {
+                     img{
+                         width: 100%;
+                 }
+        }
+    }
+
+
+
+    .blakelye-header{
+        height: 990px;
+        padding-top: 360px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+        h4{
+            color: #152945;	
+            font-family: Mont;
+            font-size: 14px;
+            font-weight: 600;
+             line-height: 28px;
+             margin-bottom: 30px;
+             text-transform: uppercase;
+        }
+
+        h5{
+            color: #161419;
+           font-family: Mont;
+             font-size: 52px;	
+             font-weight: bold;
+             line-height: 46px;
+             margin-bottom: 15px;
+        }
+
+        p{
+            max-width: 450px;
+            margin: 0;
+        }
+    }
+}

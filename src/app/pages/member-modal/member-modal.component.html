@@ -1,0 +1,16 @@
+<div class="modal-back" (click)="_close()">
+  </div>
+
+  <div class="actual-modal">
+<span class="close" (click)="_close()"></span>
+<div class="member-modal-img">
+  <img [src]="member.img">
+</div>
+<div class="member-modal-content">
+  <h4>{{member.fullName}}</h4>
+  <h3>{{member.status}}</h3>
+  <p style="display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;overflow: hidden;">{{member.descr}}</p>
+</div>
+  </div> 

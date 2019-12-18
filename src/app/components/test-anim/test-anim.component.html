@@ -1,0 +1,31 @@
+<div id="test-anim">
+  <h4 class="h4" [class.animated]="_anim">Digital Agency</h4>
+  <app-h1 *ngFor="let h1 of h1_list" [@visibilityChanged]="h1.state">{{h1.name}}</app-h1>
+  <ul #ul>
+    <li *ngFor="let h1 of h1_list; let i = index" [class.hide]="i === 0" class="not_animated" [class.show]="i === 1">
+      <span [innerHTML]="h1.description" [class.animated]="_anim"></span>
+    </li>
+  </ul>
+
+  <div class="bottom-block ">
+    <section class="left-social">
+      <a [class.animated]="_anim"><i class="fab fa-dribbble"></i></a>
+      <a [class.animated]="_anim"><i class="fab fa-behance"></i></a>
+      <a [class.animated]="_anim"><i class="fab fa-instagram"></i></a>
+    </section>
+
+
+
+    <div class="toggle-animation" [class.animated]="_anim">
+    </div>
+
+    <section #right_anim class="right-anim" [class.animated]="_anim">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </section>
+  </div>
+
+
+</div>

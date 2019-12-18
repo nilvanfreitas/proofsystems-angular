@@ -1,0 +1,70 @@
+@media (max-width:768px){
+	.agency-page .margin-minus {
+		width: auto;
+		}
+}
+
+@media (max-width:768px){
+	.team-member {
+		margin-bottom: 50px;
+	}
+	.team-member .team-member-img {
+	}
+
+}
+
+@media (max-width:576px) {
+	.team-member{
+		min-height: calc(100% - 85px);
+	}
+}
+
+
+@media (max-width:480px){
+	.agency-page {
+		background: #fff;
+		padding-bottom: 0;
+		height: 13px;
+	}
+	.agency-page .pc-h3 {
+		display: none;
+		}
+	.agency-page .secret-sauce {
+		display: none;
+	}
+	.agency-page .margin-minus {
+		border: 1px solid #F0EEF6;
+		border-radius: 3px;
+		height: 160px;
+		}
+	.agency-page .margin-minus.row {
+		margin-right: 0;
+		margin-left: 0;
+		}
+	.agency-page .margin-minus > div  span:first-of-type {
+		font-size: 36px;
+		line-height: 1;
+	}
+	.agency-page .margin-minus > div  span::last-of-type {
+		line-height: 0;
+		font-size: 14px;
+	}
+	.meet-our-team {
+		padding-top: 121px;
+	}
+	.meet-our-team h2 {
+		display: none;
+	}
+	.agency-page  .margin-minus  > div {
+		justify-content: flex-start;
+		margin-top: 50px;
+	}
+	.team-member {
+		margin-bottom: 85px;
+	}
+
+
+	.meet-our-team .container .row > div {
+		margin-bottom: 0
+	}
+}

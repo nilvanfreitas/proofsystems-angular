@@ -1,0 +1,10 @@
+<div class="just-wrapper" #element >
+  
+<div [class.z-index]="zIndexWhite()" [ngStyle]="topStyleWhite()">
+      <a class="white" [ngStyle]="bottomStyleWhite()">HIRE US</a>
+  </div>
+  
+<div  [ngStyle]="topStyleBlack()" [class.z-index]="zIndexBlack()">
+    <a [ngStyle]="bottomStyleBlack()" class="black">HIRE US</a>
+</div>
+</div>
